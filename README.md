@@ -14,7 +14,7 @@ TypeScript implementation for the A6 Platform Development assignment. It uses Je
 npm install
 ```
 
-Copy `.env.example` to `.env`, then put your own key in `.env`:
+Set your own key in `.env`:
 
 ```dotenv
 JEV_API_KEY=YOUR_REAL_API_KEY
@@ -22,15 +22,6 @@ JEV_API_URL=https://jev-ai.org/api/v1/systemone/
 JEV_MODEL=jev-1.13
 JEV_CONFIDENCE_THRESHOLD=0.65
 JEV_TIMEOUT_MS=20000
-```
-
-Do not commit `.env`, place the key in frontend/browser code, or include the key in the assignment submission. The default endpoint shown here follows the Jev API documentation at https://jev-ai.org/docs/ and https://jev-ai.org/docs/decisions/. If your lecturer provided a different Jev host or credentials, follow that service's documentation and change `JEV_API_URL` accordingly.
-
-PowerShell alternative without a `.env` file:
-
-```powershell
-$env:JEV_API_KEY="YOUR_REAL_API_KEY"
-npm run live:test
 ```
 
 ## Run one live classification
